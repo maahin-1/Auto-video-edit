@@ -216,3 +216,4 @@ More: `npx hyperframes docs <topic>` (topics: `data-attributes`, `gsap`, `render
 - **Hyperframes** — framework © HeyGen, docs at https://hyperframes.heygen.com.
 
 Built by [Nate Herk](https://aiautomationsociety.ai). Have fun ripping it apart.
+# Auto-video-edit
