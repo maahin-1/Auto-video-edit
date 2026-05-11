@@ -32,3 +32,25 @@ raw-media/
 **/renders/frames/
 **/renders/frames-*/
 
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Temp / backup files
+*.tmp
+*.bak
+*.orig
+
+# npm/yarn debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
