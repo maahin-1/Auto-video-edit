@@ -1,6 +1,25 @@
-# Auto-video-edit
+# Auto-video-edit: HTML-native AI video editing workspace with Hyperframes and GSAP
 
-HTML-native video editing workspace built on [Hyperframes](https://hyperframes.heygen.com). Compositions are plain HTML files with paused GSAP timelines registered on `window.__timelines`. The Hyperframes CLI handles lint, preview, and render.
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Node 22+](https://img.shields.io/badge/node-22%2B-339933?logo=nodedotjs&logoColor=white)
+![GSAP](https://img.shields.io/badge/animation-GSAP-88CE02?logo=greensock&logoColor=black)
+![FFmpeg](https://img.shields.io/badge/render-FFmpeg-007808?logo=ffmpeg&logoColor=white)
+
+**Auto-video-edit is an open-source workspace for making videos as plain HTML files, driven by AI coding agents.** Each composition is an HTML page with a paused GSAP timeline registered on `window.__timelines`, and the [Hyperframes](https://hyperframes.heygen.com) CLI lints, previews and renders it to MP4 through FFmpeg. It ships Claude Code skills for Hyperframes and GSAP, a motion-design playbook and agent guides, so an AI agent can author, preview and render motion-graphics videos for you.
+
+---
+
+## Contents
+
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Workflow](#workflow)
+- [Project layout](#project-layout)
+- [Render contract (must-knows)](#render-contract-must-knows)
+- [FAQ](#faq)
+- [License](#license)
+
+---
 
 ## Prerequisites
 
@@ -66,6 +85,27 @@ Auto-video-edit/
 
 Full spec: `CLAUDE.md` and `npx hyperframes docs <topic>`.
 
+---
+
+## FAQ
+
+### What is Auto-video-edit?
+A video editing workspace where every video is an HTML composition with a GSAP timeline, rendered to MP4 by the Hyperframes CLI. It is set up for AI agents such as Claude Code to author the compositions.
+
+### What do I need to install?
+Node.js 22 or newer, FFmpeg on your PATH, and Chrome (installed automatically with `npx hyperframes browser ensure`).
+
+### How do I render a video?
+From a folder under `video-projects/`, run `npx hyperframes render --quality standard --output renders/final.mp4`. Use `--quality draft` for a quick preview render.
+
+### Is it a Remotion project?
+No. It is a separate pipeline built on Hyperframes, where compositions are HTML plus GSAP rather than React components.
+
+### Where does it come from?
+It was converted from the Hyperframes Student Kit by Nate Herk (MIT, copyright 2026 Nate Herk), whose notice is kept in the license.
+
 ## License
 
-MIT.
+MIT. See [LICENSE](LICENSE).
+
+This workspace was converted from the Hyperframes Student Kit by Nate Herk, which is MIT licensed, so his copyright notice is kept. The AI Automation Society brand materials that remain as a worked example (`assets/brand-tokens.css`, `DESIGN.ais-example.md`) are the property of AI Automation Society and are not licensed for reuse; replace them with your own brand materials.
